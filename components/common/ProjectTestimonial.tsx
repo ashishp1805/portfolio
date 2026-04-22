@@ -7,18 +7,20 @@ import { MoreProject } from "./MoreProjects";
 
 export function ProjectTestimonial() {
     const projects = [
-        {
-          name: "Trex Social App",
-          designation: "Backend · Node.js · MongoDB · AWS S3",
-          quote:
-            "Built a scalable social media backend with structured APIs, authentication, and secure media uploads using AWS S3 pre-signed URLs.",
-          points: [
-            "Designed REST APIs for users, posts, and interactions",
-            "Implemented AWS S3 file uploads using pre-signed URLs",
-            "Handled authentication and content management",
-          ],
-          src: "",
-        },
+      {
+  name: "Trex Social App",
+  designation: "Backend · Node.js · MongoDB · AWS S3 · Socket.io · Deeplinking",
+  quote:
+    "Engineered a scalable social media backend with secure authentication, optimized APIs, and efficient media handling using AWS S3 pre-signed URLs.",
+  points: [
+    "Architected and developed scalable RESTful APIs for users, posts, and interactions to ensure efficient data flow and performance",
+    "Engineered secure media upload functionality using AWS S3 pre-signed URLs, reducing server load and improving upload speed",
+    "Implemented robust authentication and content management systems to enhance security and user experience",
+    "Designed and managed trek-based features with city-based collections and dynamic itineraries for better content organization",
+    "Developed real-time chat functionality using Socket.IO, enabling seamless and instant user communication"
+  ],
+  src: "",
+},
         {
           name: "Leinster GAA",
           designation: "Full Stack · MERN · API Integration",
@@ -28,6 +30,7 @@ export function ProjectTestimonial() {
             "Built admin panel and user-facing booking system",
             "Integrated third-party APIs for ticketing flow",
             "Handled real-time data and booking logic",
+
           ],
           src: "",
         },
@@ -37,9 +40,10 @@ export function ProjectTestimonial() {
           quote:
             "Created a full-stack e-learning platform with admin dashboard, user roles, and structured content delivery system.",
           points: [
-            "Developed admin dashboard for course management",
-            "Implemented user roles and access control",
+            "Developed admin dashboard for course & teacher management",
+            "Implemented user roles like teacher and student and access control",
             "Designed scalable backend for content delivery",
+            "Implement tone.js library fot notes and rest"
           ],
           src: "",
         },
@@ -56,11 +60,11 @@ export function ProjectTestimonial() {
           src: "",
         },
       ];
-    
+
 
   return (
     <section id="projects" className="relative w-full bg-black py-4">
-      
+
       {/* Grid Background */}
       <div
         className={cn(
@@ -75,7 +79,7 @@ export function ProjectTestimonial() {
 
       {/* Content */}
       <div className="relative z-20 mx-auto max-w-6xl px-4 md:px-8">
-        
+
         {/* Heading */}
         <div className="text-center">
           <h2 className="text-4xl md:text-6xl font-bold bg-linear-to-b from-neutral-200 to-neutral-500 bg-clip-text text-transparent">
@@ -88,9 +92,6 @@ export function ProjectTestimonial() {
 
         {/* Testimonials */}
         <AnimatedTestimonials testimonials={projects} />
-      </div>
-      <div className="relative w-full bg-black">
-        <MoreProject/>
       </div>
     </section>
   );

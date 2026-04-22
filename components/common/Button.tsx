@@ -5,22 +5,20 @@ import { FaArrowRight } from "react-icons/fa6";
 import { FaArrowUp } from "react-icons/fa6";
 
 export function CTAButton({
-  text, 
-  icon, 
+  text,
   variant = "black",
   href,
   download
 }: {
-  text: string; 
-  icon: React.ReactNode;
+  text: string;
   variant?: "black" | "white";
   href?: string;
   download?: boolean;
 }) {
-  const className = variant === "black" 
+  const className = variant === "black"
     ? "bg-black text-white text-lg px-3 py-2 border-neutral-400 dark:border-neutral-400 whitespace-nowrap"
     : "bg-white text-black text-lg px-3 py-2 border-black-400 dark:border-black-400 whitespace-nowrap";
-  
+
   const handleClick = () => {
     if (href) {
       if (href.startsWith('#')) {
@@ -46,7 +44,7 @@ export function CTAButton({
       }
     }
   };
-  
+
   return (
     <div>
       <Button
@@ -55,7 +53,7 @@ export function CTAButton({
         className={className}
         onClick={handleClick}
       >
-        {text} {icon}
+        {text}
       </Button>
     </div>
   );

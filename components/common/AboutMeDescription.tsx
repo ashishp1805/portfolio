@@ -4,7 +4,7 @@ import React from "react";
 
 export function AboutMeDescription() {
   return (
-    <div className="mx-auto max-w-5xl p-4 md:p-8">
+    <div className="mx-auto max-w-5xl p-4 md:p-8 mt-10">
       <p className="text-xl text-white">
         My name is Aashish, and I am a Full Stack Developer with hands-on experience building modern, scalable, and user-friendly web applications. I specialize in working with{" "}
         <Tooltip
@@ -47,11 +47,6 @@ export function AboutMeDescription() {
           <span className="cursor-pointer font-bold">Node.js</span>
         </Tooltip>
         {" and related technologies. This full-stack approach allows me to take projects from concept to deployment with confidence."}
-
-      </p>
-      <br />
-      <p className="text-xl text-white">
-        As a freelancer, I've worked on projects for startups and small businesses, helping them turn ideas into functional products that support growth, engagement, and real business goals. I value clean code, scalable architecture, and clear communication throughout the development process.
 
       </p>
       <br />

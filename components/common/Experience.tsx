@@ -76,18 +76,20 @@ export function Experience() {
           <p className="text-sm text-zinc-400">
             Working on production-level applications across backend systems, admin panels, and user-facing platforms.
           </p>
-    
+
           <CheckList
             items={[
               "Built scalable APIs using Node.js and Express.js",
               "Developed full-stack features including admin dashboards",
               "Optimized MongoDB queries for performance",
               "Integrated third-party APIs in real-world applications",
+              "Built real-time features using Socket.io",
+              "Implemented AWS S3 file uploads (pre-signed URLs)",
             ]}
           />
-    
+
           <SkillPills
-            labels={["Node.js", "Express", "MongoDB", "React", "APIs"]}
+            labels={["Node.js", "Express", "MongoDB", "React", "APIs" , "Socket.io" ,"DeepLink-URL"]}
           />
         </div>
       ),
@@ -100,16 +102,16 @@ export function Experience() {
           <p className="text-sm text-zinc-400">
             Built strong fundamentals in backend development, real-time systems, and full-stack basics through hands-on projects.
           </p>
-    
+
           <CheckList
             items={[
               "Developed REST APIs using Node.js and Express",
               "Worked with MongoDB for data handling",
-              "Built real-time features using Socket.io",
-              "Implemented AWS S3 file uploads (pre-signed URLs)",
+              "Worked in Library Management System task"
+
             ]}
           />
-    
+
           <SkillPills
             labels={["JavaScript", "Node.js", "MongoDB", "Socket.io", "AWS"]}
           />
@@ -119,7 +121,7 @@ export function Experience() {
   ];
 
   const timelineData = [
-   
+
     {
       title: "Jan 2025 – Jun 2025",
       content: <HoverCardRow item={items[1]} motionGroup="experience" index={1} />,
