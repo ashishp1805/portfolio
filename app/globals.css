@@ -22,6 +22,14 @@ body {
   font-family: Arial, Helvetica, sans-serif;
 }
 
+/* Utility: hide scrollbars */
+.no-scrollbar {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+.no-scrollbar::-webkit-scrollbar {
+  display: none; /* Chrome, Safari, Opera */
+}
 :root {
   --animate-cell-ripple: cell-ripple var(--duration, 200ms) ease-out none 1 var(--delay, 0ms);
 }
