@@ -1,6 +1,6 @@
 "use client";
 
-import { IconArrowLeft, IconArrowRight } from "@tabler/icons-react";
+import { FaArrowLeft, FaArrowRight } from "react-icons/fa6";
 import { motion, AnimatePresence } from "motion/react";
 import { useEffect, useState } from "react";
 
@@ -160,13 +160,13 @@ export const AnimatedTestimonials = ({
               onClick={handlePrev}
               className="group flex h-8 w-8 items-center justify-center rounded-full bg-neutral-800 hover:bg-neutral-700"
             >
-              <IconArrowLeft className="h-5 w-5 text-white transition-transform group-hover:rotate-12" />
+              <FaArrowLeft className="h-5 w-5 text-white transition-transform group-hover:rotate-12" />
             </button>
             <button
               onClick={handleNext}
               className="group flex h-8 w-8 items-center justify-center rounded-full bg-neutral-800 hover:bg-neutral-700"
             >
-              <IconArrowRight className="h-5 w-5 text-white transition-transform group-hover:-rotate-12" />
+              <FaArrowRight className="h-5 w-5 text-white transition-transform group-hover:-rotate-12" />
             </button>
           </div>
         </div>

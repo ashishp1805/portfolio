@@ -4,12 +4,7 @@ import React from "react";
 import { ContactForm } from "@/components/common/ContactForm";
 import { HoverEffect, type HoverEffectItem } from "@/components/ui/card-hover-effect";
 import { cn } from "@/lib/utils";
-import {
-  IconBrandGithub,
-  IconBrandLinkedin,
-  IconMail,
-  IconPhone,
-} from "@tabler/icons-react";
+import { FaGithub, FaLinkedin, FaEnvelope, FaPhone } from "react-icons/fa";
 
 function InfoCardInner({
   title,
@@ -47,7 +42,7 @@ export function ContactSection() {
         <InfoCardInner
           title="Email"
           icon={
-            <IconMail className="h-7 w-7 text-neutral-600 dark:text-neutral-300" />
+            <FaEnvelope className="h-7 w-7 text-neutral-600 dark:text-neutral-300" />
           }
           value={
             <a
@@ -66,7 +61,7 @@ export function ContactSection() {
         <InfoCardInner
           title="Phone"
           icon={
-            <IconPhone className="h-7 w-7 text-neutral-600 dark:text-neutral-300" />
+            <FaPhone className="h-7 w-7 text-neutral-600 dark:text-neutral-300" />
           }
           value={
             <a
@@ -85,7 +80,7 @@ export function ContactSection() {
         <InfoCardInner
           title="LinkedIn"
           icon={
-            <IconBrandLinkedin className="h-7 w-7 text-neutral-600 dark:text-neutral-300" />
+            <FaLinkedin className="h-7 w-7 text-neutral-600 dark:text-neutral-300" />
           }
           value={
             <a
@@ -104,7 +99,7 @@ export function ContactSection() {
         <InfoCardInner
           title="GitHub"
           icon={
-            <IconBrandGithub className="h-7 w-7 text-neutral-600 dark:text-neutral-300" />
+            <FaGithub className="h-7 w-7 text-neutral-600 dark:text-neutral-300" />
           }
           value={
             <a

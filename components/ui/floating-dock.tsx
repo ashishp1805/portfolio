@@ -6,7 +6,7 @@
  **/
 
 import { cn } from "@/lib/utils";
-import { IconLayoutNavbarCollapse } from "@tabler/icons-react";
+import { FaBars } from "react-icons/fa";
 import {
   AnimatePresence,
   MotionValue,
@@ -85,7 +85,7 @@ const FloatingDockMobile = ({
         onClick={() => setOpen(!open)}
         className="flex h-10 w-10 items-center justify-center rounded-full bg-gray-50 dark:bg-neutral-800"
       >
-        <IconLayoutNavbarCollapse className="h-5 w-5 text-neutral-500 dark:text-neutral-400" />
+        <FaBars className="h-5 w-5 text-neutral-500 dark:text-neutral-400" />
       </button>
     </div>
   );

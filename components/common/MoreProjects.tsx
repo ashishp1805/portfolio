@@ -1,7 +1,7 @@
 "use client";
 import React from "react";
 import { TypewriterEffectSmooth } from "../ui/typewriter-effect";
-import { IconBrandGithub } from "@tabler/icons-react";
+import { FaGithub } from "react-icons/fa";
 
 export function MoreProject() {
   const words = [
@@ -35,7 +35,7 @@ export function MoreProject() {
           rel="noopener noreferrer"
           className="inline-flex h-12 w-48 items-center justify-center gap-2 rounded-xl bg-neutral-900 border border-neutral-800 text-white text-sm font-semibold hover:bg-neutral-800 hover:border-neutral-700 hover:shadow-lg hover:shadow-emerald-500/5 transition-all duration-300 cursor-pointer"
         >
-          <IconBrandGithub className="h-4 w-4" />
+          <FaGithub className="h-4 w-4" />
           View All Projects
         </a>
       </div>
